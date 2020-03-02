@@ -1,0 +1,44 @@
+# filename: rutgers.json
+{
+"amarel":
+{
+        "description"                 : "The Amarel HPC cluster at Rutgers.",
+        "notes"                       : "Access from registered IP address.",
+        "schemas"                     : ["ssh","local"],
+        "ssh"                         :
+        {
+            "job_manager_endpoint"    : "slurm+ssh://aag193@amarel.rutgers.edu/",
+            "filesystem_endpoint"     : "sftp://aag193@amarel.rutgers.edu/home/aag193/"
+        },
+        "local"                       :
+        {
+            "job_manager_endpoint"    : "slurm://amarel.rutgers.edu:/home/aag193/",
+            "filesystem_endpoint"     : "file://amarel.rutgers.edu:/home/aag193/"
+        },
+        "default_queue"               : "main",
+        "resource_manager"            : "SLURM",
+        "agent_scheduler"             : "CONTINUOUS",
+        "agent_spawner"               : "POPEN",
+        "agent_launch_method"         : "SRUN",
+        "task_launch_method"          : "SRUN",
+        "mpi_launch_method"           : "SRUN",
+        "pre_bootstrap_0"             :["module load gcc/5.4",
+                                        "module load python/3.5.2",
+                                        "module load intel/17.0.4"
+                                        ],
+
+
+        "default_remote_workdir"      : "/home/aag193",
+        "valid_roots"                 : ["/scratch", "$SCRATCH", "/home", "$HOME"],
+        "rp_version"                  : "local",
+        "virtenv_mode"                : "update",
+        "virtenv_dist"                : "default",
+        "python_dist"                 : "default",
+        "export_to_cu"                : ["LMOD_CMD",
+                                         "LMOD_SYSTEM_DEFAULT_MODULES",
+                                         "LD_LIBRARY_PATH"],
+        "cu_pre_exec"                 : ["module restore"]
+    }
+}
+
+
