@@ -7,13 +7,13 @@
         "schemas"                     : ["ssh","local"],
         "ssh"                         :
         {
-            "job_manager_endpoint"    : "slurm+ssh://aag193@amarel.rutgers.edu/",
-            "filesystem_endpoint"     : "sftp://aag193@amarel.rutgers.edu/home/aag193/"
+            "job_manager_endpoint"    : "slurm+ssh://amarel.rutgers.edu/",
+            "filesystem_endpoint"     : "sftp://amarel.rutgers.edu/"
         },
         "local"                       :
         {
-            "job_manager_endpoint"    : "slurm://amarel.rutgers.edu:/home/aag193/",
-            "filesystem_endpoint"     : "file://amarel.rutgers.edu:/home/aag193/"
+            "job_manager_endpoint"    : "slurm://amarel.rutgers.edu:/home/",
+            "filesystem_endpoint"     : "file://amarel.rutgers.edu:/home/"
         },
         "default_queue"               : "main",
         "resource_manager"            : "SLURM",
@@ -29,7 +29,7 @@
                                         ],
        
        
-        "default_remote_workdir"      : "/home/aag193",
+        "default_remote_workdir"      : "$HOME",
         "valid_roots"                 : ["/scratch", "$SCRATCH", "/home", "$HOME"],
         "rp_version"                  : "local",
         "virtenv_mode"                : "create",
@@ -41,4 +41,3 @@
         "cu_pre_exec"                 : []
     }
 }
-
