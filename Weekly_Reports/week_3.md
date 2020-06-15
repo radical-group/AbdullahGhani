@@ -2,7 +2,7 @@
 
 **What I have been working on:**
 
-Setting up radical pilot on Amarel with Andre via issues.
+Setting up radical pilot on Amarel with Andre via issues: https://github.com/radical-cybertools/radical.pilot/issues/2079
 
 Had problems with allocating more than one node on stampede2. It was fixed with the new hotfix.
 
