@@ -3,7 +3,7 @@
 1. Make sure you have passwordless SSH access set up to connect to amarel.
  [This]( https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/) link should help you with setting up password-less SSH access.
  
- Make sure you set no pass phrase. After that [this](https://linuxize.com/post/using-the-ssh-config-file/) link should help you set your username and path to your IdentityFile id_rsa respective to Amarel.
+   Make sure you set no pass phrase. After that [this](https://linuxize.com/post/using-the-ssh-config-file/) link should help you set your username and path to your IdentityFile id_rsa respective to Amarel.
  
 2. Place the config file I have in the repo in the following directory.  
 `~/.radical/pilot/configs/resource_rutgers.json`
