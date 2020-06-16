@@ -10,7 +10,7 @@
 
 *If any of those directories do not exist, make sure you create them*
 
-3. Change the resource description in the `*entk*.py` script as such
+3. Change the resource description in the `entk.py` script as such
 ```python
 # Apply the resource configuration provided by the user
     res_dict = {
