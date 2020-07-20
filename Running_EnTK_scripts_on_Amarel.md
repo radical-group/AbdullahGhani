@@ -17,7 +17,7 @@
         'resource': 'rutgers.amarel',
         'walltime': 10,
         'cpus': 2,
-        'schema': 'local'}
+        'schema': 'ssh'}
 
     # Assign resource request description to the Application Manager
     amgr.resource_desc = res_dict
